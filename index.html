@@ -7,6 +7,15 @@
 </head>
 
 <body> <!-- LO ÚNICO QUE SE VE ES LO QUE ESTE ADENTRO DE BODY -->
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <ul id="menu-principal">
+            <li><a href="#sobre">Sobre mí</a></li>
+            <li><a href="#proyectos-realizados">Proyectos Tecnológicos</a></li>
+            <li><a href="#habilidades">Habilidades Tecnologícas</a></li>
+            <li><a href="#contacto">Contáctame</a></li>
+        </ul>
+    </nav>
     <header> <!-- ENCABEZADO DE LA PÁGINA WEB -->
         <h1>Portafolio Profesional</h1>
         <h4>Anthony Oziel Ramos López</h4>
@@ -34,138 +43,181 @@
             </a>
         </aside>
     </header>
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav>
-        <ul id="menu-principal">
-            <li><a href="#">Sobre mí</a></li>
-            <li><a href="#proyectos-realizados">Proyectos Tecnológicos</a></li>
-            <li><a href="#habilidades">Habilidades Tecnologícas</a></li>
-            <li><a href="#">Contáctame</a></li>
-        </ul>
-    </nav>
     <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <section>
-            <h2>Bienvenidos a mi Portafolio Profesional</h2>
-            <p>Mi nombre es <mark>Anthony Oziel Ramos López</mark>, experto en <strong>Tecnologías de la
-                    Información</strong> lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <p>Mi <small>frase favorita</small> es: <em>"Primero resuelvo, después escribo código"</em></p>
-            <img src="images/foto-perfil.jpg" alt="foto de perfil" id="foto-perfil" />
+        <section id="sobre">
+            <h2 class="titulo-portafolio">Bienvenidos a mi Portafolio Profesional</h2>
+            <section class="sobre-mi">
+                <div class="main">
+                    <img src="images/foto-perfil.jpg" alt="foto de perfil" id="foto-perfil" />
+                    <div class="sobre-mi-texto">
+                        <h2>Sobre Mí</h2>
+                        <p>Mi nombre es <strong>Anthony Oziel Ramos López</strong>, experto en <strong>Tecnologías de la
+                                Información</strong> con enfoque
+                            en desarrollo frontend y diseño de interfaces. A lo largo de mi trayectoria he creado
+                            aplicaciones de escritorio y sitios web funcionales, combinando precisión técnica con
+                            sensibilidad visual. Domino herramientas como HTML, CSS, JavaScript y C#, y aplico una
+                            filosofía clara: <em>“Primero resuelvo, después escribo código”</em>, priorizando la
+                            comprensión del
+                            problema para construir soluciones eficientes y bien estructuradas.</p>
+                    </div>
+                </div>
+            </section>
         </section>
         <section id="proyectos-realizados">
-            <h2>Proyectos Tecnológicos</h2>
-            <div id="lista-proyectos">
-                <article class="proyecto">
-                    <h3>Plataforma de Cuidado Personal.</h3>
-                    <time datatime="2025-07">Julio 2025</time>
-                    <img src="images/proyecto nuevo.jpg" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id unde modi facere vel saepe a
-                        error
-                        soluta ducimus odit.</p>
-                </article>
-                <article class="proyecto">
-                    <h3>Plataforma de Vida Saludable.</h3>
-                    <time datatime="2025-07">Julio 2025</time>
-                    <img src="images/proyecto nuevo.jpg" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id unde modi facere vel saepe a
-                        error
-                        soluta ducimus odit.</p>
-                </article>
-                <article class="proyecto">
-                    <h3>Plataforma de hábitos saludables.</h3>
-                    <time datatime="2025-07">Julio 2025</time>
-                    <img src="images/proyecto nuevo.jpg" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id unde modi facere vel saepe a
-                        error
-                        soluta ducimus odit.</p>
-                </article>
+            <div class="proyectos">
+                <div class="titulo-proyectos">
+                    <h2>Proyectos Tecnológicos</h2>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <h5>Gestor de hábitos diarios</h5>
+                        <time datatime="2025-05">Mayo 2025</time>
+                        <img src="images/4Health-Proyecto.jpg" />
+                        <p>Aplicación enfocada en registrar y visualizar cuatro hábitos clave relacionados con el
+                            bienestar personal. Diseñada para todo tipo de usuarios, ofrecía una interfaz accesible
+                            y funcional para fomentar la constancia y el autocuidado.</p>
+                    </div>
+                    <div class="card">
+                        <h5>Plataforma de compraventa</h5>
+                        <time datatime="2025-10">Octubre 2025</time>
+                        <img src="images/TGlow-Proyecto.jpg" />
+                        <p>Sitio web diseñado para facilitar la compra y venta de productos orientados al bienestar
+                            y las necesidades de la comunidad LGBT+, con un enfoque especial en personas trans.
+                            Ofrece una experiencia accesible, segura y empática</p>
+                    </div>
+                    <div class="card">
+                        <h5>Aprendizaje digital seguro</h5>
+                        <time datatime="2025-10">Octubre 2025</time>
+                        <img src="images/HackyFox-Proyecto.jpg" />
+                        <p>Aplicación interactiva dirigida a niños, diseñada para enseñar principios básicos de
+                            ciberseguridad de forma intuitiva y divertida. Mediante dinámicas visuales y lenguaje
+                            accesible, promueve hábitos digitales seguros desde edades tempranas.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="habilidades">
-            <h2>Habilidades y Competencias</h2>
-            <h3>Lenguajes y Tecnologías</h3>
-            <ul class="lista-tecnologias">
-                <li>JavaScript básico</li>
-                <li>C#</li>
-                <li>C++</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-            <h3>Nivel de Dominio</h3>
-            <div>
-                <label>HTML5</label>
-                <progress max="100" value="80">80%</progress>
-            </div>
-            <div>
-                <label>CSS</label>
-                <progress max="100" value="50">50%</progress>
-            </div>
-            <div>
-                <label>JavaScript</label>
-                <progress max="100" value="20">20%</progress>
-            </div>
+            <section class="habilidades-competencias">
+                <div class="cuerpo-habilidades">
+                    <div class="habilidades-texto">
+                        <h2>Habilidades y Competencias</h2>
+                        <h3>Lenguajes y Tecnologías</h3>
+                    </div>
+                    <div class="contenedor-circulos">
+                        <div class="circulo">
+                            <svg>
+                                <circle cx="90" cy="90" r="80"></circle>
+                                <circle cx="90" cy="90" r="80" style="--porcentaje: 70;"></circle>
+                            </svg>
+                            <div class="porcentaje">70%</div>
+                            <p>HTML</p>
+                        </div>
+                        <div class="circulo">
+                            <svg>
+                                <circle cx="90" cy="90" r="80"></circle>
+                                <circle cx="90" cy="90" r="80" style="--porcentaje: 50;"></circle>
+                            </svg>
+                            <div class="porcentaje">50%</div>
+                            <p>CSS</p>
+                        </div>
+                        <div class="circulo">
+                            <svg>
+                                <circle cx="90" cy="90" r="80"></circle>
+                                <circle cx="90" cy="90" r="80" style="--porcentaje: 30;"></circle>
+                            </svg>
+                            <div class="porcentaje">30%</div>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="circulo">
+                            <svg>
+                                <circle cx="90" cy="90" r="80"></circle>
+                                <circle cx="90" cy="90" r="80" style="--porcentaje: 30;"></circle>
+                            </svg>
+                            <div class="porcentaje">30%</div>
+                            <p>C++</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
         <section id="contacto">
-            <h2>Contáctame</h2>
-            <p>Platícame de tu proyecto, llena los datos y te contactaré.</p>
-            <form>
-                <div class="campos">
-                    <label>Nombre completo</label>
-                    <input type="text" value="Anthony Oziel Ramos López" name="nombre" placeholder="Nombre completo" required/>
-                    <button>Enviar</button>
+            <div class="proyectos contacto">
+                <div class="titulo-proyectos">
+                    <h2>Contáctame</h2>
+                    <p>Platícame de tu proyecto, llena los datos y te contactaré.</p>
                 </div>
-                <div class="campos">
-                    <label>Email</label>
-                    <input type="email" name="correo_electronico" placeholder="ejemplo@utcancun.edu.mx" required/>
+
+                <div class="box">
+                    <div class="card formulario">
+                        <form class="form-grid">
+                            <div class="campo">
+                                <label>Nombre completo</label>
+                                <input type="text" value="Anthony Oziel Ramos López" name="nombre" required />
+                            </div>
+
+                            <div class="campo">
+                                <label>Email</label>
+                                <input type="email" name="correo_electronico" required />
+                            </div>
+
+                            <div class="campo">
+                                <label>Motivo</label>
+                                <select>
+                                    <option value="1">Contacto</option>
+                                    <option selected>Cotización</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="campo">
+                                <label>Teléfono</label>
+                                <input type="tel" />
+                            </div>
+
+                            <div class="campo">
+                                <label>Fecha de evento</label>
+                                <input type="date" />
+                            </div>
+
+                            <div class="campo">
+                                <label>Número de empleados</label>
+                                <input type="number" />
+                            </div>
+
+                            <div class="campo">
+                                <label>Modo de contacto</label>
+                                <div class="opciones">
+                                    <input type="checkbox" name="modalidad"><span>WhatsApp</span>
+                                    <input type="checkbox" name="modalidad"><span>Correo</span>
+                                </div>
+                            </div>
+
+                            <div class="campo">
+                                <label>¿Eres cliente?</label>
+                                <div class="opciones">
+                                    <input type="radio" name="es_cliente" /><span>Sí</span>
+                                    <input type="radio" name="es_cliente" /><span>No</span>
+                                </div>
+                            </div>
+
+                            <div class="campo">
+                                <label>Fotografía</label>
+                                <input type="file" />
+                            </div>
+
+                            <div class="campo full">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="campos">
-                    <label>Motivo</label>
-                    <select>
-                        <option value="1">Contacto</option>
-                        <option selected>Cotización</option>
-                        <option>Otro</option>
-                    </select>
-                </div>
-                <div class="campos">
-                    <label>Teléfono</label>
-                    <input type="tel"/>
-                </div>
-                <div class="campos">
-                    <label>Fecha de evento</label>
-                    <input type="date"/>
-                </div>
-                <div class="campos">
-                    <label>Número de empleados</label>
-                    <input type="number"/>
-                </div>
-                <div class="campos">
-                    <label>Modo de contacto</label>
-                    <input type="checkbox" class="opciones" name="modalidad"><span>WhatsApp</span>
-                    <input type="checkbox" class="opciones" name="modalidad"><span>Correo</span>
-                </div>
-                <div class="campos">
-                    <label>¿Eres cliente?</label>
-                    <input type="radio" name="es_cliente"/><span>Sí</span>
-                    <input type="radio" name="es_cliente"/><span>No</span>
-                </div>
-                <div class="campos">
-                    <label>Fotografía</label>
-                    <input type="file"/>
-                </div>
-                <div class="campos">
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
+            </div>
         </section>
+
     </main>
     <footer>
-        <p>&copy; 2025 Todos los derechos reservador - Anthony Oziel Ramos López</p>
+        <p class="texto-footer">&copy; 2025 Todos los derechos reservados - Anthony Oziel Ramos López</p>
     </footer>
 </body>
 
