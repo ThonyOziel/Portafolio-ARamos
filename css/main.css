@@ -79,6 +79,7 @@ p {
 
 .bi {
     color: #EBCAA8;
+    padding: 10px 10px;
 }
 
 .sobre-mi {
@@ -130,7 +131,7 @@ section {
 }
 
 .proyectos {
-    background: #CBA884;
+    background: #B4764F;
     width: 100%;
     padding: 100px 0px;
 }
